@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up window</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+    <!--Start page-->
+
+    <div class="start-page">
+
+        <img src="img.png" alt="donate" class="image">
+        <button class="button_form-hidden" data-popup="window-form">Donate</button>
+        <footer>
+            <p class="footer">&copy;Belarus 2020</p>
+        </footer>
+
+    </div>
+
+    <!--Popup window-->
+
+    <div class="form" id="window-form" style="display: none;">
+        <img src="img_2.jpg" alt="people" class="img_form">
+        <h2 class="title_form">Your contact details</h2>
+        <form method="POST">
+            <div class="form_fields">
+                <div class="form_field">
+                    Name<br />
+                    <input placeholder="Name"  type="text">
+                </div>
+                <div class="form_field">
+                    E-mail<br />
+                    <input placeholder="e-mail@example.com" required type="email" name="email">
+                </div>
+                <div class="form_field">
+                    Phone number<br />
+                    <input placeholder="+375" required type="phone" name="phone">
+                </div>
+            </div>
+            <button class="button_form" data-popup="window" type="submit">Send</button>
+        </form>
+    </div>
+
+</body>
+</html>
